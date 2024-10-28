@@ -1,0 +1,7 @@
+/target/
+.classpath
+.project
+/logs
+/.settings
+env.properties
+loginCredentials.xlsx

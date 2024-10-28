@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="11" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-27T21:51:14 PDT" name="Suite" finished-at="2024-10-27T21:55:39 PDT" duration-ms="264579">
+    <groups>
+      <group name="regression">
+        <method signature="Test_SFDCLogin.test_CheckRememberMe(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" name="test_CheckRememberMe" class="com.salesforce.tests.Test_SFDCLogin"/>
+        <method signature="Test_SFDCLogin.test_ForgotPassword(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" name="test_ForgotPassword" class="com.salesforce.tests.Test_SFDCLogin"/>
+        <method signature="Test_SFDCLogin.test_LoginErrorMessage(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" name="test_LoginErrorMessage" class="com.salesforce.tests.Test_SFDCLogin"/>
+        <method signature="Test_SFDCLogin.test_LoginWithInvalidUserNamePswd(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" name="test_LoginWithInvalidUserNamePswd" class="com.salesforce.tests.Test_SFDCLogin"/>
+        <method signature="Test_SFDCLogin.test_LoginWithValidLoginCredentials(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" name="test_LoginWithValidLoginCredentials" class="com.salesforce.tests.Test_SFDCLogin"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Test_SFDCLogin.test_LoginWithValidLoginCredentials(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" name="test_LoginWithValidLoginCredentials" class="com.salesforce.tests.Test_SFDCLogin"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="Test_SFDCLogin.test_LoginWithValidLoginCredentials(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" name="test_LoginWithValidLoginCredentials" class="com.salesforce.tests.Test_SFDCLogin"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-10-27T21:51:14 PDT" name="AllTest" finished-at="2024-10-27T21:55:39 PDT" duration-ms="264579">
+      <class name="com.salesforce.tests.Test_Accounts">
+        <test-method is-config="true" signature="loginToSalesForce(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_Accounts@17a87e37]" started-at="2024-10-27T21:54:04 PDT" name="loginToSalesForce" finished-at="2024-10-27T21:54:18 PDT" duration-ms="14338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToSalesForce -->
+        <test-method signature="test_EditView()[pri:0, instance:com.salesforce.tests.Test_Accounts@17a87e37]" started-at="2024-10-27T21:54:18 PDT" name="test_EditView" finished-at="2024-10-27T21:54:23 PDT" duration-ms="5242" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with value: ACCOUNT.LAST_ACTIVITY
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JPO1NOA', ip: '192.168.56.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: ACCOUNT.LAST_ACTIVITY
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JPO1NOA', ip: '192.168.56.1', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:283)
+at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:186)
+at com.salesforce.pages.base.BasePage.selectDropDownOption(BasePage.java:140)
+at com.salesforce.tests.Test_Accounts.test_EditView(Test_Accounts.java:141)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_EditView -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_Accounts@17a87e37]" started-at="2024-10-27T21:54:24 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:54:24 PDT" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method is-config="true" signature="loginToSalesForce(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_Accounts@17a87e37]" started-at="2024-10-27T21:54:24 PDT" name="loginToSalesForce" finished-at="2024-10-27T21:54:44 PDT" duration-ms="20239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToSalesForce -->
+        <test-method signature="test_createAccounts()[pri:0, instance:com.salesforce.tests.Test_Accounts@17a87e37]" started-at="2024-10-27T21:54:44 PDT" name="test_createAccounts" finished-at="2024-10-27T21:54:52 PDT" duration-ms="7436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_createAccounts -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_Accounts@17a87e37]" started-at="2024-10-27T21:54:52 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:54:53 PDT" duration-ms="1085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method is-config="true" signature="loginToSalesForce(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_Accounts@17a87e37]" started-at="2024-10-27T21:54:53 PDT" name="loginToSalesForce" finished-at="2024-10-27T21:55:29 PDT" duration-ms="35991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToSalesForce -->
+        <test-method signature="test_createNewView()[pri:0, instance:com.salesforce.tests.Test_Accounts@17a87e37]" started-at="2024-10-27T21:55:29 PDT" name="test_createNewView" finished-at="2024-10-27T21:55:38 PDT" duration-ms="8622" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1067)
+at org.testng.Assert.assertEquals(Assert.java:1031)
+at org.testng.Assert.assertEquals(Assert.java:1077)
+at com.salesforce.tests.Test_Accounts.test_createNewView(Test_Accounts.java:107)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_createNewView -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_Accounts@17a87e37]" started-at="2024-10-27T21:55:38 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:55:39 PDT" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+      </class> <!-- com.salesforce.tests.Test_Accounts -->
+      <class name="com.salesforce.tests.Test_UserMenuDropDown">
+        <test-method is-config="true" signature="loginAndClickUserDropDown(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:51:46 PDT" name="loginAndClickUserDropDown" finished-at="2024-10-27T21:51:55 PDT" duration-ms="8701" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndClickUserDropDown -->
+        <test-method signature="test_DeveloperConsoleOption()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:51:55 PDT" name="test_DeveloperConsoleOption" finished-at="2024-10-27T21:52:00 PDT" duration-ms="4620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_DeveloperConsoleOption -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:52:00 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:52:00 PDT" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method is-config="true" signature="loginAndClickUserDropDown(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:52:00 PDT" name="loginAndClickUserDropDown" finished-at="2024-10-27T21:52:15 PDT" duration-ms="14635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndClickUserDropDown -->
+        <test-method signature="test_LogoutOption()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:52:15 PDT" name="test_LogoutOption" finished-at="2024-10-27T21:52:17 PDT" duration-ms="2650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_LogoutOption -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:52:17 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:52:18 PDT" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method is-config="true" signature="loginAndClickUserDropDown(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:52:18 PDT" name="loginAndClickUserDropDown" finished-at="2024-10-27T21:52:33 PDT" duration-ms="15713" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndClickUserDropDown -->
+        <test-method signature="test_MyProfileOption()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:52:33 PDT" name="test_MyProfileOption" finished-at="2024-10-27T21:52:37 PDT" duration-ms="3657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_MyProfileOption -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:52:37 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:52:38 PDT" duration-ms="1075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method is-config="true" signature="loginAndClickUserDropDown(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:52:38 PDT" name="loginAndClickUserDropDown" finished-at="2024-10-27T21:53:10 PDT" duration-ms="31787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndClickUserDropDown -->
+        <test-method signature="test_MySettings()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:53:10 PDT" name="test_MySettings" finished-at="2024-10-27T21:53:35 PDT" duration-ms="25319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_MySettings -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:53:35 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:53:35 PDT" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method is-config="true" signature="loginAndClickUserDropDown(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:53:35 PDT" name="loginAndClickUserDropDown" finished-at="2024-10-27T21:54:03 PDT" duration-ms="27502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndClickUserDropDown -->
+        <test-method signature="test_SelectUserMenuDropDown()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:54:03 PDT" name="test_SelectUserMenuDropDown" finished-at="2024-10-27T21:54:03 PDT" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_SelectUserMenuDropDown -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_UserMenuDropDown@4b3a45f1]" started-at="2024-10-27T21:54:03 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:54:04 PDT" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+      </class> <!-- com.salesforce.tests.Test_UserMenuDropDown -->
+      <class name="com.salesforce.tests.Test_SFDCLogin">
+        <test-method signature="test_CheckRememberMe(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:15 PDT" name="test_CheckRememberMe" finished-at="2024-10-27T21:51:24 PDT" duration-ms="9546" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_CheckRememberMe -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:24 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:51:25 PDT" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method signature="test_ForgotPassword(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:25 PDT" name="test_ForgotPassword" finished-at="2024-10-27T21:51:29 PDT" duration-ms="4418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_ForgotPassword -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:29 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:51:29 PDT" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method signature="test_LoginErrorMessage(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:29 PDT" name="test_LoginErrorMessage" finished-at="2024-10-27T21:51:33 PDT" duration-ms="3741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_LoginErrorMessage -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:33 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:51:33 PDT" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method signature="test_LoginWithInvalidUserNamePswd(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:33 PDT" name="test_LoginWithInvalidUserNamePswd" finished-at="2024-10-27T21:51:39 PDT" duration-ms="5357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_LoginWithInvalidUserNamePswd -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:39 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:51:39 PDT" duration-ms="367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+        <test-method signature="test_LoginWithValidLoginCredentials(java.lang.String)[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:39 PDT" name="test_LoginWithValidLoginCredentials" finished-at="2024-10-27T21:51:46 PDT" duration-ms="6927" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_LoginWithValidLoginCredentials -->
+        <test-method is-config="true" signature="tearDownAfterMethod()[pri:0, instance:com.salesforce.tests.Test_SFDCLogin@2f6e28bc]" started-at="2024-10-27T21:51:46 PDT" name="tearDownAfterMethod" finished-at="2024-10-27T21:51:46 PDT" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterMethod -->
+      </class> <!-- com.salesforce.tests.Test_SFDCLogin -->
+    </test> <!-- AllTest -->
+  </suite> <!-- Suite -->
+</testng-results>

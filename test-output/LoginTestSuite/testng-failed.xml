@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoginTestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestLoginFunctionalities(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.salesforce.tests.Test_SFDCLogin">
+        <methods>
+          <include name="test_LoginWithValidLoginCredentials" invocation-numbers="0"/>
+          <include name="test_CheckRememberMe" invocation-numbers="0"/>
+          <include name="test_LoginWithInvalidUserNamePswd" invocation-numbers="0"/>
+          <include name="test_ForgotPassword" invocation-numbers="0"/>
+          <include name="test_LoginErrorMessage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.salesforce.tests.Test_SFDCLogin -->
+    </classes>
+  </test> <!-- TestLoginFunctionalities(failed) -->
+</suite> <!-- Failed suite [LoginTestSuite] -->
